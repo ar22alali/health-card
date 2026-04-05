@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emergency Medical Card</title>
+    <style>
+      body {
+        background: #e8f5e9;
+        display: flex; /*لترتيب العناصر*/
+        justify-content: center; /* توسيط المحتوى أفقياً */
+        align-items: center; /* توسيط المحتوى عامودياً */
+        height: 90vh; /*ارتفاع الكرت حسب شاشه الجهاز*/
+      }
+
+      .card {
+        background: #ffffff;
+        padding: 25px;
+        width: 330px; /*عرض الكرت*/
+        border-radius: 15px;
+        border: 2px solid #2e8b57;
+        box-shadow: 20px 10px 15px rgba(0, 0, 0, 0.326);
+        line-height: 1.6; /*المسافة بين السطور*/
+      }
+
+      h1 {
+        background: #2e8b57;
+        color: #ffffff;
+        border-radius: 5px;
+        text-align: center;
+        margin-top: 0;
+      }
+
+      .information {
+        text-align: right;
+        font-size: 20px;
+      }
+
+      .first-aid {
+        background-color: #d40101cf;
+        border-radius: 4px;
+        padding: 3px;
+        color: #ffffff;
+        text-decoration: none;
+      }
+
+      hr {
+        width: 85%;
+        height: 1px;
+        background-color: black;
+        border: none;
+        margin: 15px; /* المسافة فوق وتحت */
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="card">
+      <h1>البطاقة الصحية</h1>
+      <div class="information">
+        <b>الاسم:</b> نورة محمد<br />
+        <b>تاريخ الميلاد:</b> 2008/2/17<br />
+        O+ <b>:فصيلة الدم</b><br />
+        <b>الطول:</b> 162 سم<br />
+        <b>الوزن:</b> 59 كجم<br />
+        <hr />
+        <b>الحالات المزمنة:</b> صرع &nbsp;&nbsp;
+        <a
+          class="first-aid"
+          href="https://www.moh.gov.sa/awarenessplateform/firstaid/pages/epilipsy.aspx"
+        >
+          ⚠️ الإسعافات الأولية</a
+        >
+
+        <br />
+        <b>التاريخ الطبي والقيود:</b> حساسية البنسلين<br />
+        Levetiracetam (Keppra) <b>:الأدوية</b><br />
+        <hr />
+        <b>:جهات الاتصال</b><br />
+        محمد خالد (الأب)<br />
+        <a href="tel:056788436">056788436</a>
+      </div>
+    </div>
+  </body>
+</html>
