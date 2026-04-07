@@ -16,7 +16,7 @@
       .card {
         background: #ffffff;
         padding: 25px;
-        width: 330px; /*عرض الكرت*/
+        width: 350px; /*عرض الكرت*/
         border-radius: 15px;
         border: 2px solid #2e8b57;
         box-shadow: 20px 10px 15px rgba(0, 0, 0, 0.326);
@@ -37,16 +37,20 @@
       }
 
       .first-aid {
-        background-color: #d40101cf;
+        border: 2px solid #d40101cf;
+        color: black;
         border-radius: 4px;
-        padding: 3px;
-        color: #ffffff;
+        padding: 5px;
         text-decoration: none;
+      }
+
+      .first-aid:hover {
+        background-color: red; /* يظهر لون عند مرور الماوس */
       }
 
       hr {
         width: 85%;
-        height: 1px;
+        height: 0.5px;
         background-color: black;
         border: none;
         margin: 15px; /* المسافة فوق وتحت */
@@ -56,7 +60,7 @@
 
   <body>
     <div class="card">
-      <h1>البطاقة الصحية</h1>
+      <h1>بطاقة عونك</h1>
       <div class="information">
         <b>الاسم:</b> نورة محمد<br />
         <b>تاريخ الميلاد:</b> 2008/2/17<br />
@@ -64,17 +68,23 @@
         <b>الطول:</b> 162 سم<br />
         <b>الوزن:</b> 59 كجم<br />
         <hr />
-        <b>الحالات المزمنة:</b> صرع &nbsp;&nbsp;
+        <b>الحالات المزمنة:</b>
+        <span style="background-color: red; padding: 3px 8px">صرع</span>
+        &nbsp;&nbsp;
         <a
           class="first-aid"
           href="https://www.moh.gov.sa/awarenessplateform/firstaid/pages/epilipsy.aspx"
         >
           ⚠️ الإسعافات الأولية</a
         >
-
         <br />
         <b>التاريخ الطبي والقيود:</b> حساسية البنسلين<br />
         Levetiracetam (Keppra) <b>:الأدوية</b><br />
+        <hr />
+        <b>الحالة الحالية:</b>
+        <span style="background-color: yellow; padding: 3px 8px">إنفلونزا</span>
+        <br />
+        Clarinase <b>:الأدوية الحالية</b>
         <hr />
         <b>:جهات الاتصال</b><br />
         محمد خالد (الأب)<br />
